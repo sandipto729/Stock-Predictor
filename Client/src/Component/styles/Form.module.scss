@@ -1,0 +1,125 @@
+.container {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form {
+  background-color: #1c1c1e;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+h2, h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.urlGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background-color: #2b2b2d;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  font-size: 16px;
+  outline: none;
+}
+
+.queryInput {
+  width: 100%;
+  padding: 1rem;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: #2b2b2d;
+  color: #ffffff;
+  border: 1px solid #444;
+  margin-top: 0.5rem;
+}
+
+.button {
+  background-color: #3c82f6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.removeButton {
+  background-color: #ef4444;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.removeButton:hover {
+  background-color: #dc2626;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: #10b981;
+  margin-top: 1.5rem;
+}
+
+.submitButton:hover {
+  background-color: #059669;
+}
+
+.rightContainer {
+  margin-top: 2rem;
+}
+
+.answerContainer, .urlsContainer {
+  background-color: #2a2a2c;
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: #d1d5db;
+}
+
+.urlsContainer ul {
+  padding-left: 1rem;
+}
+
+.urlsContainer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.urlsContainer a:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  text-align: center;
+  padding: 1rem;
+  color: #10b981;
+  font-weight: bold;
+}

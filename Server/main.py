@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from dotenv import load_dotenv
 import os
 
 from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain.chat_models import init_chat_model
 
@@ -19,6 +20,7 @@ os.environ["GROQ_API_KEY"] = groq_api_key
 
 app = Flask(__name__)
 
+CORS(app, supports_credentials=True, resources={r"/*": {"origins": ["http://localhost:5173"]}})
 @app.route('/')
 def home():
     return "RAG Flask Backend is running!"

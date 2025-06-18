@@ -1,6 +1,8 @@
 flask
+flask_cors
 python-dotenv
 langchain
 langchain-community
 sentence-transformers
 chromadb
+

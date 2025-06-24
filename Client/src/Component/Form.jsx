@@ -36,8 +36,8 @@ const Form = () => {
 
         const endpoint =
             mode === "query"
-                ? "http://127.0.0.1:10000/process_url_query"
-                : "http://127.0.0.1:10000/process_url_summary";
+                ? `${BACKEND_URL}/process_url_query`
+                : `${BACKEND_URL}/process_url_summary`;
 
         const payload =
             mode === "query"
